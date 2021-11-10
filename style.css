@@ -3,19 +3,32 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; /* if you want the light version */
+  background-color: ghostwhite;
 }
 
 h1 {
-  color:blue
+  color:dimgray
 }
 
 h2 {
   color: orange
 }
 
-a > h2 {
-  color:red;
-  text-decoration: underline
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #6B72E1;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 8px;
 }
 
 a:hover {
@@ -26,12 +39,17 @@ h3 {
   color:teal;
 }
 
-.card {
-  background-color: turquoise;
-  margin: 16px 25%;
+.card-white {
+  background-color: white;
+  margin: 16px 20%;
   border-radius: 16px;
-  border: 1px solid lightgrey;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
   text-align: center;
+  padding: 40px;
+}
+
+.img-circle {
+    border-radius: 50%;
 }
 
 
@@ -46,13 +64,19 @@ h3 {
 }
 
 li > a {
-  color: grey
+  color: grey;
+  font-size: 50px
 }
-
+.btn-blue {
+    background-color: #6B72E1;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+}
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
-    width: 700px;
+    width: 70px;
   }
 }
 @media (max-width: 720px) {
